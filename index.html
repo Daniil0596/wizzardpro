@@ -1,0 +1,39 @@
+<!Doctype html>
+<HTML lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="stylesforpictures.css" type="text/css" rel="stylesheet">
+</head>
+	<body>
+		<div class="wrap">
+			<div class="container">
+					<header>
+							<h1>WHO IS A PROGRAMMING WIZZARD?!</h1>
+						</header>
+		<div class="row">
+				<div class="column">
+			<div class="daniil imageHolder"></div>
+				<button id="db" onclick="showWinner(this)"> <span class="buttontext"> Даниил Хацкевич</span></button>
+				<img id="Answer" scr="images/right.png">
+				</div>
+					<div class="column">
+						<div class="sanya imageHolder"></div>
+				<button id="sb" onclick="showWinner(this)"><span class="buttontext"> Александр Астапов</span></button>
+	<script>
+		function showWinner(elem){
+			if (elem.id == "db") {
+				document.getElementById('Answer').src='images/right.png'
+				setTimeout(function(){
+     			document.getElementById('Answer').src="";
+		},1500);
+			} else {
+				document.getElementById('Answer').src='images/wrong.png'
+				setTimeout(function(){
+     			document.getElementById('Answer').src="";
+		},1500);
+			}
+		}
+	</script> 
+</body>
+</html>
